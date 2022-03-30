@@ -1,5 +1,5 @@
 :root {
-    --background-blue: #3f37c9; 
+    --background-blue: #440044; 
     --button-1: #d62828; /*heeader's button*/
     --button-2: #ec8e80; /*used for card names too*/
     --white-background-and-font-too: #ffffff; /*for background*/
@@ -28,7 +28,8 @@ p {
 
 .header-wrap {
     color: var(--white-background-and-font-too);
-   background-color: #18206F;
+   /*background-image: #18206F;*/
+   background-image: url(/images/endless-constellation.svg);
    margin-inline: auto;
    padding-bottom: 3rem;
 }
@@ -102,9 +103,9 @@ h1, h2{
     width: var(--width-size);
     margin: auto;
     display: grid;
-    grid-template-columns: 50% 50%;
-    padding-block: 5rem;
-    grid-gap: 2rem;
+    grid-template-columns: repeat(2, 1fr);
+    margin-block: 5rem;
+    grid-gap: 1rem;
 }
 
 .narrate-child1 {
@@ -149,8 +150,50 @@ h1, h2{
     color: var(--content-bg);
 }
 
+.section2 {
+    width: var(--width-size);
+    margin-inline: auto;
+    margin-bottom: 5rem;
+}
 
+.section2-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 1rem;
+}
 
+.section2-grid__child {
+    background-color: var(--content-bg);
+    border-radius: 15px;
+}
+
+.section2-top {
+    width: 320px;
+    padding-bottom: 3.5rem;
+}
+
+.section2-top h2 {
+    padding-block: 1rem;
+}
+
+.section2-grid__child {
+    padding: 1.2rem;
+    position: relative;
+}
+
+.name {
+    color: var(--button-2);
+    margin-top: .5rem;
+}
+
+.major {
+    margin-bottom: 1rem;
+}
+
+.profile {
+    display: flex;
+    justify-content: space-between;
+}
 
 @media screen and (max-width: 1000px) {
     .header-content {
