@@ -302,6 +302,10 @@ h4 {
 }
 
 @media screen and (max-width: 1000px) {
+    .menu-nav {
+        display: none;
+    }
+    
     .wrap {
         padding-bottom: 5rem;
     }
